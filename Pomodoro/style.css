@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(180deg, #f9ecdc, #93cadf, #4bafc9);
+  }
+  
+  .pomodoro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 90%;
+    max-width: 400px;
+    height: fit-content;
+    border-radius: 50px;
+    background: #f5ca85;
+    box-shadow: 0px 10px 30px #ffffff;
+    transition: transform 0.6s;
+  }
+  
+  .pomodoro-container:hover {
+    transform: scale(1.05);
+  }
+  
+  .row-container {
+    display: flex;
+    align-items: center;
+    min-height: 50px;
+  }
+  
+  .clock-container {
+    justify-content: center;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  #clock {
+    width: 100%;
+    text-align: center;
+    font-size: 70px;
+    color: #ffffff;
+  }
+  
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    padding: 5px;
+    width: 50px;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    color: #ffffff;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  button {
+    margin: 0 5px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    color: #93cadf;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  button.start-button {
+    background-color: #f9ecdc;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  button.stop-button {
+    background-color: #93cadf;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  button.reset-button {
+    background-color: #4bafc9;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  button:hover {
+    background-color: #ffffff;
+    font-weight: 700;
+    scale: 1.05;
+    transition: 0.3s;
+  }
