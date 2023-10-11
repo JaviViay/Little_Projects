@@ -1,0 +1,140 @@
+body {
+    cursor: default;
+    background-color: #1C1C1C;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.grid_layout {
+    height: 100vh;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(18, 50px);
+    grid-template-rows: repeat(18, 0fr);
+    gap: 1px;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes floatCloud {
+    0% {
+        transform: translateY(0);
+        opacity: 0.8;
+    }
+    50% {
+        transform: translateY(-10px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 0.8;
+    }
+}
+
+h1 {
+    color: #FFFFFF;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    animation: floatCloud 3s ease-in-out infinite;
+    margin-bottom: 50px;
+}
+
+.element {
+    border: 2px solid black;
+    color: #FFFFFF;
+    font-size: 18px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.element:hover {
+    transform: scale(1.15);
+    box-shadow: 0px 10px 10px #FFFFFF;
+}
+
+.element:hover > .abbreviation{
+    transform: scale(1.2);
+    transition: transform 0.5s;
+
+}
+
+.number-atomic-container {
+    position: relative;
+    grid-row: 1;
+    grid-column: 1;
+    justify-self: start;
+    align-self: start;
+}
+
+.number-atomic {
+    position: relative;
+    font-size: 0.4em;
+    top: -6em;
+    left: 0.2em;
+}
+
+
+.abbreviation {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.name {
+    font-size: 7px;
+}
+
+#alkaliMetal {
+    background-color: #CD7244;
+}
+
+#alkaliEarthMetal {
+    background-color: #F1C40F;
+}
+
+#lanthanoid {
+    background-color: #7E513A ;
+    margin-top: 20px;
+}
+
+#actinoid {
+    background-color: #76448A;
+}
+
+#transitionMetal {
+    background-color: #A93226;
+}
+
+#postTransitionMetal {
+    background-color: #2874A6;
+}
+
+#metaloid {
+    background-color: #0E6655;
+}
+
+#reactiveNonmetal {
+    background-color: #229954;
+}
+
+#nobleGas {
+    background-color: #A569BD;
+}
+
+#nonDefined{
+    background-color: #808B96;
+}
+
+.element:hover .tooltip {
+    display: block;
+}
+
+.empty {
+    align-items: center;
+}
